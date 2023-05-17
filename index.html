@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-success sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-2 text-light fw-bold " href="#">DonateBox</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarNav">
+                <ul class="navbar-nav fw-medium fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link text-light active mx-2" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-2" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-2" href="#">Our Causes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-2">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-2" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" style="align-items: center;">
+            <div class="carousel-item active" style="z-index: -1;">
+                <img src="/Resources/bg-image-1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" style="z-index: -1;">
+                <img src="/Resources/bg-image-2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" style="z-index: -1;">
+                <img src="/Resources/bg-image-3.jpg" class="d-block w-100" alt="..." style="height: fit-content;">
+            </div>
+            <form style="z-index: 1; position: absolute; top: 30%; left: 50%">
+                <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                    data-payment_button_id="pl_LqjJRTJslFTue0" async> </script>
+            </form>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- about us -->
+    <div class="accordion py-5 bg-success-subtle" id="accordionPanelsStayOpenExample">
+        <h1 style="text-align: center;">About Us</h1>
+        <div class="accordion-item bg-success-subtle">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    <strong>Our Mission</strong>
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    <p>Our donation website was created with a mission to make a positive impact on the lives of
+                        those in need. We aim to connect generous individuals with reputable charitable organizations
+                        that are working tirelessly to address some of the world's most pressing issues. By donating
+                        through our platform, you can rest assured that your contribution will go directly towards
+                        supporting important causes and making a meaningful difference in the lives of those who need it
+                        most.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item bg-success-subtle">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    <strong>Our Values</strong>
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p>At our donation website, we believe in transparency, accountability, and the power of collective
+                        action. We prioritize working with organizations that are committed to providing clear and
+                        concise
+                        information about their activities, finances, and impact. We also believe that every individual
+                        has
+                        the power to create positive change in the world, and that by working together, we can achieve
+                        incredible results.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item bg-success-subtle">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    <strong>Our Impact</strong>
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p>Since our inception, we have facilitated thousands of donations, raising millions of dollars for
+                        a wide range of causes. From supporting disaster relief efforts to funding education programs
+                        and healthcare initiatives, our donors have made a significant impact on the world around us. We
+                        are committed to continuing this work, and to ensuring that every donation made through our
+                        platform goes towards creating a brighter future for all.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class=" text-center text-white bg-success">
+        <div class="container p-4">
+            <section class="mb-4">
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #1e3050" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #1e3050" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #1e3050" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #1e3050" href="#!" role="button"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #1e3050" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #1e3050" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <section class="">
+                <form action="">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Sign up for our newsletter</strong>
+                            </p>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example2" class="form-control" />
+                                <label class="form-label" for="form5Example2">Email address</label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <section class="mb-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                    distinctio earum repellat quaerat voluptatibus placeat nam,
+                    commodi optio pariatur est quia magnam eum harum corrupti dicta,
+                    aliquam sequi voluptate quas.
+                </p>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2023 Copyright:
+            <a class="text-white" href="#">DonateBox.com</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
